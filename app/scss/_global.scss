@@ -1,0 +1,72 @@
+html,
+body{
+    height: 100%;
+}
+
+body{
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 140%;
+    color:$white;
+    @extend %lato-400;
+    background-color: $white;
+}
+
+.container{
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.button{
+    font-size: 18px;
+    line-height: 130%;
+    padding: 12px 24px;
+    background-color: $green-900;
+    border-radius: 6px;
+    transition: background-color, 0.5s ;
+}
+
+.button:hover{
+    background-color: #4D810C;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: $dark-900;
+    text-transform: uppercase;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+        margin-bottom: 51px;
+    }
+
+    &__item:not(:last-child){
+        margin-right: 25px;
+    }
+
+    &__btn{
+        border: none;
+        background-color:$white;
+        font-size: 15px;
+        color: $dark-500;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom, 0.5s;
+    }
+
+    &__btn:hover{
+        border-bottom: 1px solid  rgba(99, 166, 14, 0.2);
+    }
+
+    &__btn--sale{
+        background-color: #F5F5F5;
+    }
+}
